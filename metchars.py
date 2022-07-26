@@ -162,7 +162,8 @@ print(result)
 result = re.findall(r"[ \n\t\r\f\v]", string)
 print(result)
 
-# Verfying the number of whiote spaces
+# Verfying the number of white spaces
+# Keep a count
 print(len(result))
 print(string.count(" "))
 
@@ -230,7 +231,7 @@ print(result)
 result = re.findall(r"\W\D\W", string)
 print(result)
 
-#MAtch all whitespace chars
+# MAtch all whitespace chars
 
 result = re.findall(r"\s", string)
 print(result)
@@ -239,7 +240,7 @@ print(result)
 result = re.findall(r"\S{8,}", string)
 print(result)
 
-#Match any set of 3-5 alphanumeric chars positioned in between white spaces
+# Match any set of 3-5 alphanumeric chars positioned in between white spaces
 
 result = re.findall(r"\s(\w{3,5})\s", string)
 print(result)
