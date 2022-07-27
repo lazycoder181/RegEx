@@ -13,3 +13,20 @@ print(result)
 result = re.findall(r"(.+?);.+?;20\d\d", string)
 print(result)
 
+# Problem 1:
+# Match all the book titles that end with letter p
+
+result = re.findall(r".+?;(.+p);.+?", string)
+print(result)
+
+# Problem 2:
+# Match the Authors whose last name starts with  the letter B
+
+result = re.findall(r".+?(B.+);.+?;.+?", string)
+print(result)
+
+#Problem 3:
+# match all the books published between 1980 and 1999
+
+result = re.findall(r".+?;(.+?);19[8-9][0-9]", string)
+print(result)
